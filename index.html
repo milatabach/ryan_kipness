@@ -3,64 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ryan Kipness - Portfolio</title>
+  <title>About Me - Ryan Kipness</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body { font-family: 'Calibri', sans-serif; overflow-x: hidden; }
+    .photo-wrapper { overflow: hidden; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transition: transform 0.3s ease; }
+    .photo-wrapper:hover { transform: scale(1.05); }
+    .about-photo { width: 100%; height: auto; display: block; object-fit: cover; }
   </style>
-  
 </head>
 <body class="bg-white text-black">
   <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-sm border-b border-blue-100">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-sm border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
       <a href="index.html" class="text-2xl font-black tracking-tight text-blue-900">RYAN KIPNESS</a>
       <div class="flex gap-12 text-sm font-light tracking-wider">
-        <a href="films.html" class="hover:text-blue-600 transition-colors">FILMS</a>
-        <a href="sports.html" class="hover:text-blue-600 transition-colors">SPORTS BROADCASTING</a>
-        <a href="photography.html" class="hover:text-blue-600 transition-colors">PHOTOGRAPHY</a>
-        <a href="soccer.html" class="hover:text-blue-600 transition-colors">SOCCER</a>
-        <a href="aboutMe.html" class="hover:text-blue-600 transition-colors">ABOUT</a>
+        <a href="films.html" class="hover:text-blue-900 transition-colors">FILMS</a>
+        <a href="sports.html" class="hover:text-blue-900 transition-colors">SPORTS BROADCASTING</a>
+        <a href="photography.html" class="hover:text-blue-900 transition-colors">PHOTOGRAPHY</a>
+        <a href="soccer.html" class="hover:text-blue-900 transition-colors">SOCCER</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="relative" style="padding-top: 120px; padding-bottom: 60px;">
-    <div class="max-w-5xl mx-auto px-8 text-center">
-      <h1 class="text-5xl md:text-6xl font-extralight tracking-tight mb-4 text-blue-900">Welcome</h1>
-      <p class="text-gray-600 font-light">Ryan Kipness — Portfolio</p>
-    </div>
-  </header>
+  <!-- About Me Section -->
+  <section class="relative px-8" style="padding-top: 120px; padding-bottom: 80px;">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-5 gap-16 items-center">
+        <div class="md:col-span-2">
+          <div class="space-y-6">
+            <div class="photo-wrapper">
+              <img src="Media/profile1.png" alt="Ryan Kipness" class="about-photo max-h-[460px] object-cover">
+            </div>
+            <div class="photo-wrapper">
+              <img src="Media/direct.gif" alt="Directing GIF" class="w-full h-auto object-contain" />
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-3 space-y-8">
+          <p class="text-xl font-light text-gray-700 leading-relaxed">
+            At Columbia University, I received a Bachelor of Arts in Film & Media while maintaining a starting position on the Columbia men’s soccer team. My goal is to combine my passion for sports production with my love of athletics.
+          </p>
+          <p class="text-xl font-light text-gray-700 leading-relaxed">
+            After earning my degree at Columbia, I spent a semester as a technical director, camera operator, and producer for the University of New Haven football livestreams. At Columbia, I was involved in all aspects of film creating, including Writing, Producing, Editing, Crew Management, and Post-Production.
+          </p>
+          <p class="text-xl font-light text-gray-700 leading-relaxed">
+            I was honored to be awarded the 2024 Teammate of the Year at Columbia, especially because teamwork and collaboration are essential to ensure successful productions. As a member of the soccer team, I also honed essential work skills like time management, discipline, leadership, and perseverance.
+          </p>
+          <p class="text-xl font-light text-gray-700 leading-relaxed">
+            My hope is to merge my two passions into a position in the world of sports broadcast operations.
+          </p>
 
-  <!-- Bottom left image -->
-  <div class="fixed bottom-0 left-0 p-8 z-10">
-    <img src="media/transparent.png" alt="Logo" class="w-32 h-32 object-contain" />
-  </div>
-
-  <!-- Minimal content -->
-  <section class="relative py-12 px-8">
-    <div class="max-w-5xl mx-auto text-center">
-      <p class="text-gray-600 font-light">Explore the sections via the navbar.</p>
+          <!-- Social Media -->
+          <div class="pt-2">
+            <div class="flex gap-4">
+              <a href="https://www.linkedin.com/in/ryan-kipness-a8026b372/" target="_blank" class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-black text-white hover:bg-gray-800 transition-all"><i class="fab fa-linkedin-in text-xl"></i></a>
+              <a href="https://www.instagram.com/ryankipness/?hl=en" target="_blank" class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-black text-white hover:bg-gray-800 transition-all"><i class="fab fa-instagram text-xl"></i></a>
+              <a href="https://www.instagram.com/ryankipness_wildlife/?hl=en" target="_blank" class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-black text-white hover:bg-gray-800 transition-all"><i class="fab fa-instagram text-xl"></i></a>
+              <a href="mailto:ryanmkipness@gmail.com" class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-black text-white hover:bg-gray-800 transition-all"><i class="fas fa-envelope text-xl"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+
   <!-- Footer -->
-  <footer class="relative py-12 px-8 border-t border-blue-100">
+  <footer class="relative py-12 px-8 border-t border-gray-200">
     <div class="max-w-5xl mx-auto text-center">
       <p class="text-xs text-gray-500 font-light tracking-wider">© 2025 RYAN KIPNESS. ALL RIGHTS RESERVED.</p>
     </div>
   </footer>
-
-  <script>
-    // Smooth scroll for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
 </body>
 </html>

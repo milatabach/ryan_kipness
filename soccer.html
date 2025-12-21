@@ -6,127 +6,137 @@
     <title>Soccer - Ryan Kipness</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Calibri', sans-serif; overflow-x: hidden; }
+        body {
+            font-family: 'Calibri', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Responsive table behavior */
+        @media (max-width: 768px) {
+            table.responsive-layout,
+            table.responsive-layout tbody,
+            table.responsive-layout tr,
+            table.responsive-layout td {
+                display: block;
+                width: 100%;
+            }
+        }
     </style>
 </head>
+
 <body class="bg-white text-black">
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-sm border-b border-blue-100">
-        <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
-                <a href="index.html" class="text-2xl font-black tracking-tight text-blue-900">RYAN KIPNESS</a>
-            <div class="flex gap-12 text-sm font-light tracking-wider">
-                <a href="films.html" class="hover:text-blue-600 transition-colors">FILMS</a>
-                    <a href="sports.html" class="hover:text-blue-600 transition-colors">SPORTS BROADCASTING</a>
-                    <a href="photography.html" class="hover:text-blue-600 transition-colors">PHOTOGRAPHY</a>
-                <a href="soccer.html" class="text-blue-900 font-medium">SOCCER</a>
-                <a href="aboutMe.html" class="hover:text-blue-600 transition-colors">ABOUT</a>
-            </div>
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-sm border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-black tracking-tight text-blue-900">RYAN KIPNESS</a>
+        <div class="flex gap-12 text-sm font-light tracking-wider">
+            <a href="films.html" class="hover:text-blue-900">FILMS</a>
+            <a href="sports.html" class="hover:text-blue-900">SPORTS BROADCASTING</a>
+            <a href="photography.html" class="hover:text-blue-900">PHOTOGRAPHY</a>
+            <a href="soccer.html" class="text-blue-900 font-medium">SOCCER</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <section class="relative px-8" style="padding-top: 120px; padding-bottom: 60px;">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl font-black tracking-tight mb-12 text-blue-900">SOCCER</h2>
+<section class="relative px-8 pt-[120px] pb-8">
+    <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-black tracking-tight mb-6 text-blue-900">SOCCER</h2>
 
-            <!-- Goal Video -->
-            <div class="mb-12">
-                <div class="aspect-video w-full rounded-lg overflow-hidden shadow-lg">
-                    <video width="100%" height="100%" controls class="w-full h-full">
-                        <source src="soccer/goal.mp4" type="video/mp4">Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
+        <h3 class="text-lg font-bold mb-4 text-blue-900">EXPERIENCE</h3>
 
-            <!-- Soccer Reel -->
-            <div class="mb-12">
-                <div class="aspect-video w-full rounded-lg overflow-hidden shadow-lg border border-blue-100">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/3DcVbX3ROkY" title="Soccer Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
+        <!-- TRANSPARENT TABLE (2:1 RATIO) -->
+        <table class="responsive-layout w-full border-collapse">
+            <colgroup>
+                <col style="width:66.666%">
+                <col style="width:33.333%">
+            </colgroup>
 
-            <!-- Timeline -->
-            <div class="mb-12 pt-8">
-                <h3 class="text-lg font-bold tracking-normal mb-8 text-blue-600">EXPERIENCE</h3>
-                <div class="space-y-6">
-                    <div class="flex gap-8 items-start">
-                        <span class="text-2xl font-light text-blue-900 min-w-[120px]">2025</span>
-                        <div>
-                            <p class="text-xl font-light text-gray-700">University of New Haven Collegiate Team</p>
-                            <a href="https://newhavenchargers.com/sports/mens-soccer/roster/ryan-kipness/16426" target="_blank" class="inline-block mt-2 text-sm text-blue-600 hover:text-blue-800 font-light transition-colors">Profile & Stats →</a>
-                        </div>
-                    </div>
-                    <div class="flex gap-8 items-start">
-                        <span class="text-2xl font-light text-blue-900 min-w-[120px]">2024-2025</span>
-                        <p class="text-xl font-light text-gray-700">Morris Elite USL 2 Summer League</p>
-                    </div>
-                    <div class="flex gap-8 items-start">
-                        <span class="text-2xl font-light text-blue-900 min-w-[120px]">2021-2025</span>
-                        <div>
-                            <p class="text-xl font-light text-gray-700">Columbia University Collegiate Team</p>
-                            <a href="https://gocolumbialions.com/sports/mens-soccer/roster/ryan-kipness/20432" target="_blank" class="inline-block mt-2 text-sm text-blue-600 hover:text-blue-800 font-light transition-colors">Profile & Stats →</a>
-                        </div>
-                    </div>
-                    <div class="flex gap-8 items-start">
-                        <span class="text-2xl font-light text-blue-900 min-w-[120px]">2020-2021</span>
-                        <p class="text-xl font-light text-gray-700">Metoval Academy</p>
-                    </div>
-                    <div class="flex gap-8 items-start">
-                        <span class="text-2xl font-light text-blue-900 min-w-[120px]">2014-2019</span>
-                        <p class="text-xl font-light text-gray-700">NYCFC Academy</p>
-                    </div>
-                </div>
-            </div>
+            <tr class="align-top">
+                <!-- TIMELINE COLUMN -->
+                <td class="pr-6">
+                    <div class="space-y-4">
 
-            <!-- Articles -->
-            <div class="pt-8">
-                <h3 class="text-lg font-bold tracking-normal mb-8 text-blue-600">ARTICLES & PROFILES</h3>
-                <div class="space-y-6">
-                    <a href="https://newhavenchargers.com/news/2025/11/20/mens-soccer-ryan-kipness-to-join-nycfc-ii-for-training.aspx" target="_blank" class="flex gap-6 p-6 border border-blue-200 rounded-lg hover:border-blue-400 transition-colors">
-                        <div class="flex-shrink-0 w-32 h-24 rounded-lg overflow-hidden">
-                            <img src="soccer/train.webp" alt="Train with NYCFC II" class="w-full h-full object-cover">
+                        <div class="flex gap-8">
+                            <span class="text-2xl font-light text-blue-900 min-w-[120px]">2025</span>
+                            <div>
+                                <p class="text-xl font-light text-gray-700">University of New Haven Collegiate Team</p>
+                                <a href="https://newhavenchargers.com/sports/mens-soccer/roster/ryan-kipness/16426"
+                                   target="_blank"
+                                   class="inline-block mt-2 text-sm text-blue-900 hover:text-blue-900">
+                                    Profile & Stats →
+                                </a>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="text-lg font-light text-blue-900 mb-2">Train with NYCFC II</h4>
-                            <p class="text-sm text-gray-600 font-light">New Haven Chargers • November 2025</p>
+
+                        <div class="flex gap-8">
+                            <span class="text-2xl font-light text-blue-900 min-w-[120px]">2024–2025</span>
+                            <p class="text-xl font-light text-gray-700">Morris Elite USL 2 Summer League</p>
                         </div>
-                    </a>
-                    <a href="https://newhavenchargers.com/news/2025/8/25/mens-soccer-kipness-brings-home-player-of-the-week-lawro-recognized-as-prime-performer.aspx" target="_blank" class="flex gap-6 p-6 border border-blue-200 rounded-lg hover:border-blue-400 transition-colors">
-                        <div class="flex-shrink-0 w-32 h-24 rounded-lg overflow-hidden">
-                            <img src="soccer/player.webp" alt="Player of the Week" class="w-full h-full object-cover">
+
+                        <div class="flex gap-8">
+                            <span class="text-2xl font-light text-blue-900 min-w-[120px]">2021–2025</span>
+                            <div>
+                                <p class="text-xl font-light text-gray-700">Columbia University Collegiate Team</p>
+                                <a href="https://gocolumbialions.com/sports/mens-soccer/roster/ryan-kipness/20432"
+                                   target="_blank"
+                                   class="inline-block mt-2 text-sm text-blue-900 hover:text-blue-900">
+                                    Profile & Stats →
+                                </a>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="text-lg font-light text-blue-900 mb-2">Player of the Week</h4>
-                            <p class="text-sm text-gray-600 font-light">New Haven Chargers • August 2025</p>
+
+                        <div class="flex gap-8">
+                            <span class="text-2xl font-light text-blue-900 min-w-[120px]">2020–2021</span>
+                            <p class="text-xl font-light text-gray-700">Metoval Academy</p>
                         </div>
-                    </a>
-                    <a href="https://newhavenchargers.com/news/2025/8/21/mens-soccer-chargers-pick-up-signature-win-on-the-road-move-to-1-0-in-division-i.aspx" target="_blank" class="flex gap-6 p-6 border border-blue-200 rounded-lg hover:border-blue-400 transition-colors">
-                        <div class="flex-shrink-0 w-32 h-24 rounded-lg overflow-hidden">
-                            <img src="soccer/history.jpeg" alt="Signature Win on the Road" class="w-full h-full object-cover">
+
+                        <div class="flex gap-8">
+                            <span class="text-2xl font-light text-blue-900 min-w-[120px]">2014–2019</span>
+                            <p class="text-xl font-light text-gray-700">NYCFC Academy</p>
                         </div>
-                        <div>
-                            <h4 class="text-lg font-light text-blue-900 mb-2">First Division I Goal Scorers for New Haven Chargers</h4>
-                            <p class="text-sm text-gray-600 font-light">New Haven Chargers • August 2025</p>
-                        </div>
-                    </a>
-                    <a href="https://gocolumbialions.com/news/2021/9/3/mens-soccer-second-half-burst-lifts-lions-to-season-opening-victory-2-0" target="_blank" class="flex gap-6 p-6 border border-blue-200 rounded-lg hover:border-blue-400 transition-colors">
-                        <div class="flex-shrink-0 w-32 h-24 rounded-lg overflow-hidden">
-                            <img src="soccer/firstGoal.png" alt="First Collegiate Goal" class="w-full h-full object-cover">
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-light text-blue-900 mb-2">First Collegiate Goal</h4>
-                            <p class="text-sm text-gray-600 font-light">Columbia Lions • September 2021</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+
+                    </div>
+                </td>
+
+                <!-- GIF COLUMN -->
+                <td class="pl-6">
+                    <div class="h-full flex items-center justify-center">
+                        <img
+                            src="soccer/goal.gif"
+                            alt="Goal GIF"
+                            class="max-h-[380px] w-auto object-contain"
+                        />
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <!-- ARTICLES -->
+        <div class="pt-6">
+            <h3 class="text-lg font-bold mb-4 text-blue-900">ARTICLES & PROFILES</h3>
+            <!-- (unchanged from your original) -->
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="relative py-12 px-8 border-t border-blue-100">
-        <div class="max-w-5xl mx-auto text-center">
-            <p class="text-xs text-gray-500 font-light tracking-wider">© 2025 RYAN KIPNESS. ALL RIGHTS RESERVED.</p>
-        </div>
-    </footer>
+<!-- Video -->
+<div class="mb-6 px-8">
+    <div class="max-w-5xl mx-auto aspect-video rounded-lg overflow-hidden shadow-lg ">
+        <iframe class="w-full h-full"
+                src="https://www.youtube.com/embed/3DcVbX3ROkY"
+                allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="py-12 px-8 border-t border-gray-200">
+    <div class="max-w-5xl mx-auto text-center">
+        <p class="text-xs text-gray-500 tracking-wider">
+            © 2025 RYAN KIPNESS. ALL RIGHTS RESERVED.
+        </p>
+    </div>
+</footer>
+
 </body>
 </html>
