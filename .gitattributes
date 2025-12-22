@@ -1,0 +1,5 @@
+Media/*.png filter=lfs diff=lfs merge=lfs -text
+Media/*.JPG filter=lfs diff=lfs merge=lfs -text
+Media/*.jpeg filter=lfs diff=lfs merge=lfs -text
+soccer/*.png filter=lfs diff=lfs merge=lfs -text
+soccer/*.jpeg filter=lfs diff=lfs merge=lfs -text
